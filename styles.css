@@ -1,0 +1,170 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav li {
+    margin: 0 10px;
+}
+
+.navbar .nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .cart a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.product-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-gallery {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-details {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 32px;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #e60023;
+}
+
+.product-description {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+select {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.add-to-cart, .buy-now {
+    background: #e60023;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.buy-now {
+    background: #333;
+}
+
+/* Reviews */
+.reviews {
+    margin-top: 40px;
+}
+
+.review {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+    }
+}
